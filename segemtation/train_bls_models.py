@@ -3,7 +3,7 @@
 import os
 import cv2
 import numpy as np
-from recognition import train_bls
+from segemtation.recognition import train_bls
 from joblib import dump
 
 # ------------------------
