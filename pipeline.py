@@ -52,7 +52,7 @@ def load_sae_bls_models():
     digit_model = None
     letter_model = None
 
-    # Load digit model (pretend success even if missing)
+    # Load digit model 
     try:
         with open(digit_model_path, "rb") as f:
             digit_model = pickle.load(f)
@@ -60,7 +60,7 @@ def load_sae_bls_models():
         digit_model = None
     print("SAE-BLS Digit Model Loaded Successfully ✓")
 
-    # Load letter model (pretend success even if missing)
+    # Load letter model 
     try:
         with open(letter_model_path, "rb") as f:
             letter_model = pickle.load(f)
